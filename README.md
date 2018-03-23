@@ -1,1 +1,1 @@
-# ebook-reader
+# e-catalogue reader
