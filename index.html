@@ -1,0 +1,629 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta property="og:url"           content="http://www.sunpet.in/atz-ecat/index.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Sunpet" />
+  <meta property="og:description"   content="E-Catalog" />
+  <meta property="og:image"         content="http://www.sunpet.in/images/logo.png" />
+
+<title>Sunpet</title>
+
+<!--
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">//-->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+<!--<meta name="viewport" content="width=1080, user-scalable = no" />-->
+<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>//-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/font-awesome.css">
+<script type="text/javascript" src="lib/hash.js"></script>
+<script type="text/javascript" src="js/appload.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "48bd2642-dfd2-4ae3-bb6e-87365a49d770", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+
+
+<style type="text/css">
+
+
+.holder{        
+    width:100%;
+    display:block;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(107,106,99,0.9);
+    z-index: 99999;
+}
+.content{
+    background:#fff;
+    padding: 28px 26px 33px 25px;
+    position: relative;
+    height: 300px;
+}
+
+.content ul {
+  list-style: none;
+  display: block;
+}
+
+.content ul li {
+  padding: 5px;
+}
+
+.content ul li span {
+  padding:0px 5px;
+}
+
+.popup{
+    border-radius: 7px;
+    background:#6b6a63;
+    margin:30px auto 0;
+    padding:6px;  
+    position:relative;
+    width:50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -25%; 
+    margin-top: -150px; 
+}
+
+.close{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #000;
+}
+
+.btn {
+  padding : 6px;
+}
+
+.logo {
+  background-image:url(pics/logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 60px;
+  position: fixed;
+  z-index: 999990;
+}
+
+.page-loading{
+  position: absolute;
+  background-color: #eee; 
+  background-image:url(pics/Preloader_3.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+}
+
+
+.image-loading{
+  position: absolute;
+  background-color: blue; 
+  background-image:url(pics/Preloader_3.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: none;
+}
+
+.navbar{
+  display: none;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-inverse {
+    border-color: #ccc;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) { 
+  .catalogName{
+   display: none;
+  }
+
+ .navbar-left {
+    padding-left:50px;
+    float:left;
+  }
+
+  .navbar-right {
+    padding-left:50px;
+    float:left;
+  }
+   .navbar-nav {
+    padding-left:50px;
+    float:left;
+  }
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+
+
+
+}
+
+
+@media only screen and (orientation: landscape) {
+
+
+.holder{        
+    width:100%;
+    display:block;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(107,106,99,0.9);
+    z-index: 99999;
+}
+.content{
+    background: #fff;
+    padding: 28px 26px 33px 25px;
+    position: relative;
+}
+
+.content ul {
+  list-style: none;
+  display: block;
+}
+
+.content ul li {
+  padding: 5px;
+}
+
+.content ul li span {
+  padding:0px 5px;
+}
+
+.popup{
+    border-radius: 7px;
+    background:#6b6a63;
+    margin:30px auto 0;
+    padding:6px;  
+    position:relative;
+    width:100%;
+    top: 0;
+    left: 0;
+}
+
+.close{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #000;
+}
+
+.col-md-6{
+  width: 50% !important;
+  float:left;
+}
+
+
+}
+
+@media only screen and (orientation: portrait) {
+
+
+.holder{        
+    width:100%;
+    display:block;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(107,106,99,0.9);
+    z-index: 99999;
+}
+.content{
+    background: #fff;
+    padding: 28px 26px 33px 25px;
+    position: relative;
+    height: 100%;
+}
+
+.content ul {
+  list-style: none;
+  display: block;
+}
+
+.content ul li {
+  padding: 5px;
+}
+
+.content ul li span {
+  padding:0px 5px;
+}
+
+.popup{
+    border-radius: 7px;
+    background:#6b6a63;
+    margin:30px auto 0;
+    padding:6px;  
+    position:relative;
+    width:100%;
+    top: 0;
+    left: 0;
+}
+
+.close{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #000;
+}
+
+
+}
+
+@media (max-width: 480px) { 
+  .page_no {
+    display: none;
+  }
+
+.first_nav_button {
+    display: none;
+  }
+
+.last_nav_button {
+    display: none;
+  }
+
+
+ .navbar-left {
+    padding-left:10px;
+    padding-right:20px;
+    float:left;
+  }
+
+   .navbar-right {
+    padding-left:10px;
+    padding-right:20px;
+    float:left;
+  }
+
+   .navbar-nav {
+    padding-left:10px;
+    padding-right:20px;
+    float:left;
+  }
+
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="logo">
+</div>
+<div class="page-loading">
+</div>
+
+<div class="image-loading">
+</div>
+
+
+<div class="holder">     
+    <div id="popup" class="popup">            
+        <div class="content">
+          <div class="close"><span class="glyphicon glyphicon-remove-sign"></span></div>
+          <div class="col-md-12"><h3>Help Menu</span></h3></div>
+          <div class="col-md-6">
+      <ul class="">
+        <li>
+          <div class="">
+              <span class="glyphicon glyphicon-book"></span>
+              <span>Show / Hide Catalog List</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="glyphicon glyphicon-th-large"></span>
+              <span>Show / Hide Thumbnails</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="glyphicon glyphicon-download"></span>
+            <span>Download PDF Url</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="glyphicon glyphicon-zoom-in"></span>
+            <span>Zoom In</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="glyphicon glyphicon-zoom-out"></span>
+            <span>Zoom Out</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span class="glyphicon glyphicon-share"></span>
+            <span>Share</span>
+          </div>
+        </li>
+      </ul>
+     </div>
+          <div class="col-md-6">
+            <ul class="">
+              <li>
+                <div>
+                  <span class="glyphicon glyphicon-fast-backward"></span>
+                  <span>First Page</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="glyphicon glyphicon-backward"></span>
+                  <span>Previous Page</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="glyphicon glyphicon-forward"></span>
+                  <span>Next Page</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="glyphicon glyphicon-fast-forward"></span>
+                  <span>Last Page</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="glyphicon glyphicon-fullscreen fullscreen"></span>
+                  <span>Fullscreen</span>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <span class="glyphicon glyphicon-print"></span>
+                  <span>Print Catalogue</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!--<nav class="navbar navbar-inverse navbar-fixed-bottom " role="navigation">
+ <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-custom-menu" aria-expanded="false"> -->
+      <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <!--<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    -->
+  <div class="container-fluid">
+
+    <div class="thumbnails">
+      <div id="thumbnails">
+      </div>  
+    </div>
+    <div class="navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-left">
+        <li  data-toggle="tooltip" data-placement="top" data-original-title="Catalogue Name" >
+          <span class="catalogName btn" ></span>
+        </li>
+        <li>
+          <div class="dropup catalog-pages">
+            <button data-placement="top" data-original-title="All Catalogues"  class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-book"></span>
+              <span class="caret"></span>
+            </button>
+          </div>
+        </li>
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Thumbnails"  class="btn btn-default thumb_toggle"  title="Show Pages" >
+            <span class="glyphicon glyphicon-th-large"></span>
+          </button>
+        </li>
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Download PDF"  class="btn btn-default download_url"  title="Download PDF" >
+            <span class="glyphicon glyphicon-download"></span>
+          </button>
+        </li>
+        <!--<li>
+          <div class="dropup zoom-dropup">
+            <button data-placement="top" data-original-title="Zoom In"  class="btn btn-default dropdown-toggle zoom-dropup-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-zoom-in"></span>
+              <span class="caret"></span>
+            </button>
+          </div>
+          </li>-->
+          <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Zoom In"  class="btn btn-default zoom-in-button zoom-in"  title="" >
+            <span class="glyphicon glyphicon-zoom-in"></span>
+          </button>
+        </li>
+          <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Zoom Out"  class="btn btn-default zoom-out-button zoom-out"  title="" >
+            <span class="glyphicon glyphicon-zoom-out"></span>
+          </button>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav">
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="First Page"  class="btn btn-default first_nav_button"  title="" >
+            <span class="glyphicon glyphicon-fast-backward"></span>
+          </button>
+        </li>
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Previous Page"  class="btn btn-default previous-nav-button"  title="" >
+            <span class="glyphicon glyphicon-backward"></span>
+          </button>
+        </li>
+        <li>
+          <span class="page_no btn"></span>
+        </li>
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Next Page" class="btn btn-default next-nav-button"  title="" >
+            <span class="glyphicon glyphicon-forward"></span>
+          </button>
+        </li>
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Last Page"  class="btn btn-default last_nav_button"  title="" >
+            <span class="glyphicon glyphicon-fast-forward"></span>
+          </button>
+        </li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Enter Full Screen"  class="btn btn-default toggle_fullscreen"  title="" >
+            <span class="glyphicon glyphicon-fullscreen fullscreen"></span>
+          </button>
+        </li>
+
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Print Catalogue"  class="btn btn-default print"  title="" >
+            <span class="glyphicon glyphicon-print"></span>
+          </button>
+        </li>
+
+        <li>
+          <button type="button"  data-toggle="tooltip" data-placement="top" data-original-title="Help"  class="btn btn-default help"  title="" >
+            <span class="glyphicon glyphicon-question-sign"></span>
+          </button>
+        </li>
+
+        <li>
+          <div class="dropup sharer">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-share"></span>
+              <span class="caret"></span>
+            </button>
+
+
+
+              <ul class="dropdown-menu zoom-dropup-list" aria-labelledby=
+              "dropdownMenu3">
+                <li>
+                  <span class='st_facebook_large' displayText='Facebook'></span>
+                </li>
+                <li>
+                  <span class='st_twitter_large' displayText='Tweet'></span>
+                </li> 
+                <li>
+                  <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                </li>
+              </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+  
+<div id="canvas">
+
+<div class="magazine-viewport">
+	<div class="container">
+		<div class="magazine">
+			<!-- Next button -->
+			<div ignore="1" class="next-button"></div>
+			<!-- Previous button -->
+			<div ignore="1" class="previous-button"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<!-- Print Popup //-->
+
+
+
+
+<script type="text/javascript">
+
+$(window).load(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('.page-loading').fadeOut();
+  $('.image-loading').fadeOut();
+
+  if(zoomBool == 1){
+    //$('.image-loading').show().fadeIn(10000).$('.magazine-viewport').zoom('zoomIn');
+  }
+
+});
+
+
+  $('.close').click(function(){
+    $('.holder').hide();
+  });
+
+  $('.help').click(function(){
+    $('.holder').show();
+  });
+
+  $('.holder').click(function(){
+    $('.holder').hide();
+  });
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['lib/turn.js'],
+	nope: ['lib/turn.html4.min.js'],
+	both: ['lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
+	complete: initCatalog
+});
+
+</script>
+
+</body>
+</html>
